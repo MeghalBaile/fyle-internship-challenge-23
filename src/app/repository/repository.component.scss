@@ -1,0 +1,51 @@
+.first{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.child{
+  padding: 3px;
+}
+.repo-box{
+  border: solid black 2px;
+  padding: 10px;
+  width: 35rem;
+  height: 10rem;
+  border-radius: 10px;
+}
+.repo-box-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+}
+.topics-box{
+  width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.topic-box{
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 4px;
+  margin-right: 2px;
+}
+
+.pagination{
+  // margin: auto;
+  display: flex;
+  justify-content: center ;
+}
+.custom-page{
+  display: flex;
+  justify-content: center ; 
+  margin-bottom: 20px;
+}

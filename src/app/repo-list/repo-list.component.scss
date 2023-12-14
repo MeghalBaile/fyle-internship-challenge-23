@@ -1,0 +1,91 @@
+#profileContainer {
+  margin:auto;
+  width: 100%;
+  
+}
+.profile-box {
+  margin: auto;
+  padding: 4rem 2rem;
+  width: 95%;
+  // max-width: 78rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in;
+  border-radius: 10px;
+}
+.profile-box:hover {
+  // transform: rotate(-2deg) scale(1.01);
+  transition: 0.5s ease-in;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+.top-section button {
+  align-self: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.left h1 {
+  font-size: 1.6rem;
+}
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about {
+  margin: 2rem;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container{
+
+}
+
+.profile-name{
+  font-weight: bold;
+}
+.abt-heading{
+  font-weight: bold;
+}
+.about-ans{
+  font-size: small;
+}
+
+.checkp-button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  // margin-right: 10px;
+}
+.goto-search-button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+<div class="mt-8 main repo-box-container">
+  <div *ngFor="let publicRepo of publicRepos | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="w-18 child">
+    <div class="card repo-box" >
+      <div class="card-body">
+        <h5 class="card-title font-medium text-2xl text-sky-500">{{publicRepo.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary font-medium text-xs text-black">{{publicRepo.description}}</h6>
+        <!-- <p class="card-text"></p> -->
+        <div class="topics-box">
+        <div *ngFor="let topic of publicRepo.topics" >
+          <span class=" topic-box  bg-sky-500/100 text-white font-small text-xs"> {{topic}}</span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    
+  </div>
+</div>
+
+<div class="pagination">
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<div class="custom-page">
+<label>Items per page:
+  <select [(ngModel)]="itemsPerPage">
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+    <option value="60">60</option>
+    <option value="70">70</option>
+    <option value="80">80</option>
+    <option value="90">90</option>
+    <option value="100">100</option>
+  </select>
+</label>
+</div>

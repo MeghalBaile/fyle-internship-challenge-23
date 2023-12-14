@@ -1,0 +1,19 @@
+<div class="flex flex-col h-screen items-center justify-center gap-16" *ngIf="!loading">
+  <h1 class="text-[30px] font-medium">Search Github Profile</h1>
+  <div class="flex w-1/2 max-w-[60rem]">
+    <input class="px-4 py-2 w-full
+    border-[1px] border-[solid] border-[black]"
+      type="text"
+      [(ngModel)]="inputData"
+      name="inputData"
+      placeholder="Enter Your Github Username"
+    />
+    <button class="bg-[purple] text-[white] px-4 py-2 border-[none]
+    hover:bg-[rgba(55,_1,_55,_0.788)]
+    active:bg-[rgba(231,_59,_231,_0.788)]"
+    (click)="onClick()">Search</button>
+  </div>
+</div>
+<div *ngIf = "loading">
+  <app-spinner></app-spinner>
+</div>
